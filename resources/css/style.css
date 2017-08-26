@@ -50,6 +50,12 @@ header {
   width: 100%;
   border-bottom: solid 1px #c6c1c1;
   background-color: white;
+  z-index: 10;
+}
+
+header a {
+  text-decoration: none;
+  font-family: inherit;
 }
 
 header .content {
@@ -60,6 +66,9 @@ header .content {
 
 header .logo {
   flex: 1;
+  font-size: 1.5rem;
+  font-weight: lighter;
+  color: #4a4a4a;
 }
 
 header nav ul {
@@ -224,32 +233,47 @@ header .mobile {
 
 #features-section {
   display: flex;
-  justify-content: space-between;
-  padding: 4rem 5%;
+  justify-content: center;
+  padding-top: 4rem;
   background-color: #f3f3f3;
 }
 
 .feature {
-  flex: 1;
-  padding: 2rem;
-  margin: 0px 1.25rem;
+  justify-content: center;
   background-color: white;
+  margin: 1.18rem;
 }
 
 .feature .image-container {
   width: 90%;
   height: 65%;
   margin: 0 auto;
+  padding: 2rem;
+}
+
+.image-container img {
+  width: 100%;
+}
+
+.feature .content {
+  height: 11.69rem;
+  padding: .5rem
+}
+
+.feature .center {
+  width: 40rem;
 }
 
 .feature h2 {
-  padding-bottom: .5rem;
   font-size: 2.25rem;
   font-weight: bold;
   color: #4a4a4a;
+  line-height: 1.2;
 }
 
 .feature h3 {
+  padding: .5rem;
+  text-align: center;
   font-size: 1rem;
   line-height: 1.2;
   font-weight: 300;
